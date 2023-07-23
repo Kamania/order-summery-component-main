@@ -13,7 +13,119 @@
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <style>
+        html,body{
+            font-size: 16px;
+            font-family: 'Red Hat Display', sans-serif;
+            margin: 0;
+            height: 100%;
+        }
+        .container{
+            background-color: hsl(225, 100%, 94%);
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            height: 100%;
+        }
+        .card{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 350px;
+            margin: auto;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #fff;
+        }
 
+        #hero-image{
+            width: 100%;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        .body-section{
+            max-width: 300px;
+            padding: 0 1em 2em 1em;
+            margin: 0 auto;
+        }
+
+        #order-summary > h1 {
+            font-weight: 900;
+        }
+        #order-summary > p, #price-value{
+            color: hsl(224, 23%, 55%);
+        }
+        #price-plan{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: hsl(225, 100%, 98%);
+            margin-bottom: 1em;
+            padding: 1em;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .flex-1, .flex-3{
+            flex: 1;
+        }
+
+        .flex-2{
+            flex: 2;
+            text-align: left;
+        }
+        .flex-2 > div:first-child{
+            font-weight: 900;
+        }
+
+        a[href] {
+            text-decoration: none;
+            color: hsl(245, 75%, 52%);
+        }
+
+        .music-icon{
+            background-color: hsl(225, 100%, 94%);
+            border-radius: 50%;
+        }
+
+        .order-btn{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        .proceed-btn, .cancel-btn{
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 10px;
+            font-weight: 700;
+            background-color: inherit;
+        }
+        .proceed-btn{
+            color: white;
+            background-color: hsl(245,83%,68%);
+            margin-bottom: 1em;
+        }
+
+        @media screen and (max-width: 1440px) {
+            .container{
+                background-image: url(images/pattern-background-desktop.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            .container{
+                background-image: url('images/pattern-background-mobile.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    </style>
 </head>
 <body>
 <div class="container">
